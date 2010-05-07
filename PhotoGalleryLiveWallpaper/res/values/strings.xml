@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Photo Gallery Live Wallpaper</string>
+  <string name="wallpaper">Photo Gallery Live Wallpaper</string>
+  <string name="wallpaper_settings">Photo Gallery Live Wallpaper Settings</string>
+  <string name="no_oi">OI File Manager is not installed and is required for this feature. Would you like to install it?</string>
+  <string name="no_oi_please_install">Sure!</string>
+  <string name="no_oi_dont_install">Not now</string>
+  <string name="folder_oi">Advanced Directory Chooser</string>
+  <string name="folder_oi_summary">Requires OI File Manager to be installed. Allows any directory to be chosen.</string>
+  <string name="help">Help</string>
+  <string name="help_summary">Information</string>
+  <string name="transition_pref">Transition</string>
+  <string name="transition_pref_summary">Choose a transition between pictures</string>
+  <string-array name="transition_choices_human_readable">
+    <item>Fade Transition</item>
+    <item>None</item>
+  </string-array>
+  <string-array name="transition_choices_values">
+    <item>1</item>
+    <item>0</item>
+  </string-array>
+  <string name="stretching_pref">Stretching</string>
+  <string name="stretching_pref_on">Images will be stretched to fill the screen if they are too small.</string>
+  <string name="stretching_pref_off">Images will not be stretched to fill the screen if they are too small.</string>
+  <string name="scrolling_pref">Scrolling</string>
+  <string name="scrolling_pref_on">Scrolling is currently enabled</string>
+  <string name="scrolling_pref_off">Scrolling is currently disabled</string>
+  <string name="external_storage_folder">Directory Chooser</string>
+  <string name="external_storage_folder_summary">Top-level SD card folder containing pictures</string>
+  <string name="time_between_pictures">Time between pictures</string>
+  <string name="time_between_pictures_summary">How long before changing to the next picture</string>
+  <string name="click_to_change_pref">Enable double-tap</string>
+  <string name="click_to_change_pref_on">Currently will switch pictures when double tapping on the background.</string>
+  <string name="click_to_change_pref_off">Enable to switch pictures with double tap.</string>
+  <string name="no_images_found">Choose a folder with images!</string>
+  <string name="file_size_too_big">File is too big!</string>
+  <string name="sd_card_not_available">SD Card is not available!</string>
+  <string name="wallpaper_desc">Randomly switches between photos in a SD card folder.</string>
+  <string name="author">mikeyin</string>
+  <string-array name="time_choices_human_readable">
+    <item>1s</item>
+    <item>5s</item>
+    <item>10s</item>
+    <item>15s</item>
+    <item>30s</item>
+    <item>1m</item>
+    <item>5m</item>
+    <item>10m</item>
+    <item>15m</item>
+    <item>30m</item>
+    <item>1hr</item>
+    <item>3hr</item>
+    <item>6hr</item>
+    <item>12hr</item>
+    <item>1d</item>
+  </string-array>
+  <string-array name="time_choices_values">
+    <item>1000</item>
+    <item>5000</item>
+    <item>10000</item>
+    <item>15000</item>
+    <item>30000</item>
+    <item>60000</item>
+    <item>300000</item>
+    <item>600000</item>
+    <item>900000</item>
+    <item>1800000</item>
+    <item>3600000</item>
+    <item>10800000</item>
+    <item>21600000</item>
+    <item>43200000</item>
+    <item>86400000</item>
+  </string-array>
+</resources>
