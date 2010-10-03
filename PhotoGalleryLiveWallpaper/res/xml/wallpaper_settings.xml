@@ -10,6 +10,13 @@
     android:entryValues="@array/time_choices_values"
   />
   <CheckBoxPreference 
+    android:key="rotate"
+    android:title="@string/rotate_pref"
+    android:summaryOn="@string/rotate_pref_on"
+    android:summaryOff="@string/rotate_pref_off"
+    android:defaultValue="true"
+  />
+  <CheckBoxPreference 
     android:key="scrolling"
     android:title="@string/scrolling_pref"
     android:summaryOn="@string/scrolling_pref_on"

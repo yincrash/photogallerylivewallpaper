@@ -20,9 +20,12 @@
     <item>1</item>
     <item>0</item>
   </string-array>
-  <string name="stretching_pref">Stretching</string>
-  <string name="stretching_pref_on">Images will be stretched to fill the screen if they are too small.</string>
-  <string name="stretching_pref_off">Images will not be stretched to fill the screen if they are too small.</string>
+  <string name="rotate_pref">Rotation</string>
+  <string name="rotate_pref_on">Images will be automatically rotated if needed.</string>
+  <string name="rotate_pref_off">Images will not be rotated.</string>
+  <string name="stretching_pref">Scaling</string>
+  <string name="stretching_pref_on">Images will be scaled to fit the screen.</string>
+  <string name="stretching_pref_off">Images will not be scaled to fit the screen.</string>
   <string name="scrolling_pref">Scrolling</string>
   <string name="scrolling_pref_on">Scrolling is currently enabled</string>
   <string name="scrolling_pref_off">Scrolling is currently disabled</string>
