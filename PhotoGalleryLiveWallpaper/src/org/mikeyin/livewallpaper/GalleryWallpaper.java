@@ -6,6 +6,7 @@ import java.util.Random;
 
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
+import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -126,12 +127,7 @@ public class GalleryWallpaper extends WallpaperService {
       setTouchEventsEnabled(true);
       doubleTapDetector = new GestureDetector(new DoubleTapGestureListener(this));
 
-      DisplayMetrics metrics = new DisplayMetrics();
-      Display display = ((WindowManager) getSystemService(WINDOW_SERVICE)).getDefaultDisplay();
-      display.getMetrics(metrics);
-
-      screenHeight = metrics.heightPixels;
-      screenWidth = metrics.widthPixels;
+      getScreenSize();
 
       // surfaceFrame = new Rect(0, 0, metrics.widthPixels,
       // metrics.heightPixels);
@@ -200,6 +196,7 @@ public class GalleryWallpaper extends WallpaperService {
     @Override
     public void onVisibilityChanged(boolean visible) {
       super.onVisibilityChanged(visible);
+      getScreenSize(); // onVisibilityChanged can be called on screen rotation.
       if (visible) {
         // if there is a bitmap with time left to keep around, redraw it
         if (currentFile != null && systemTime() - timeStarted + 100 < timer) {
@@ -223,13 +220,33 @@ public class GalleryWallpaper extends WallpaperService {
     }
 
     /**
-     * Doesn't appear to happen on any current phones.. but to future proof.
+     * This happens on launcher rotation
      */
     @Override
     public void onDesiredSizeChanged(int desiredWidth, int desiredHeight) {
       super.onDesiredSizeChanged(desiredWidth, desiredHeight);
-      // this.desiredMinimumHeight = desiredHeight;
+      Log.v(TAG, "onDesiredSizeChanged");
+      getScreenSize();
       this.desiredMinimumWidth = desiredWidth;
+      
+      drawBitmap(currentBitmap);
+    }
+
+    /**
+     * 
+     */
+    private void getScreenSize()
+    {
+      DisplayMetrics metrics = new DisplayMetrics();
+      Display display = ((WindowManager) getSystemService(WINDOW_SERVICE)).getDefaultDisplay();
+      display.getMetrics(metrics);
+
+      if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+        this.screenWidth = metrics.heightPixels;
+        this.screenHeight = metrics.widthPixels;
+      }
+      this.screenHeight = metrics.heightPixels;
+      this.screenWidth = metrics.widthPixels;
     }
 
     /**
@@ -239,7 +256,6 @@ public class GalleryWallpaper extends WallpaperService {
      *          the bitmap to draw
      */
     private void drawBitmap(Bitmap b) {
-
       if (b == null) {
         Log.d(TAG, "b == null!");
         /*
