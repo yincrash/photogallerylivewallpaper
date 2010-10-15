@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+  android:key="gallery_wallpaper_settings" android:title="@string/wallpaper_settings">
+  <ListPreference android:key="timer"
+    android:title="@string/time_between_pictures" android:summary="@string/time_between_pictures_summary"
+    android:entries="@array/time_choices_human_readable"
+    android:entryValues="@array/time_choices_values" />
+  <CheckBoxPreference android:key="rotate"
+    android:title="@string/rotate_pref" android:summaryOn="@string/rotate_pref_on"
+    android:summaryOff="@string/rotate_pref_off" android:defaultValue="true" />
+  <CheckBoxPreference android:key="scrolling"
+    android:title="@string/scrolling_pref" android:summaryOn="@string/scrolling_pref_on"
+    android:summaryOff="@string/scrolling_pref_off" android:defaultValue="false" />
+  <CheckBoxPreference android:key="stretching"
+    android:title="@string/stretching_pref" android:summaryOn="@string/stretching_pref_on"
+    android:summaryOff="@string/stretching_pref_off" android:defaultValue="true" />
+  <CheckBoxPreference android:key="trim"
+    android:title="@string/trim_pref" android:summaryOn="@string/trim_pref_on"
+    android:summaryOff="@string/trim_pref_off" android:defaultValue="true" />
+  <ListPreference android:key="transition" android:title="@string/transition_pref"
+    android:summary="@string/transition_pref_summary"
+    android:defaultValue="0" android:entries="@array/transition_choices_human_readable"
+    android:entryValues="@array/transition_choices_values" />
+  <CheckBoxPreference android:key="clickToChange"
+    android:title="@string/click_to_change_pref" android:summaryOn="@string/click_to_change_pref_on"
+    android:summaryOff="@string/click_to_change_pref_off"
+    android:defaultValue="false" />
+</PreferenceScreen>
