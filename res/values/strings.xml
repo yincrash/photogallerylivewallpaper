@@ -3,13 +3,11 @@
   <string name="app_name">Photo Gallery Live Wallpaper</string>
   <string name="wallpaper">Photo Gallery Live Wallpaper</string>
   <string name="wallpaper_settings">Photo Gallery Live Wallpaper Settings</string>
-  <string name="no_oi">OI File Manager is not installed and is required
-    for this feature. Would you like to install it?</string>
+  <string name="no_oi">OI File Manager is not installed and is required for this feature. Would you like to install it?</string>
   <string name="no_oi_please_install">Sure!</string>
   <string name="no_oi_dont_install">Not now</string>
   <string name="folder_oi">Advanced Directory Chooser</string>
-  <string name="folder_oi_summary">Requires OI File Manager to be installed. Allows
-    any directory to be chosen.</string>
+  <string name="folder_oi_summary">Requires OI File Manager to be installed. Allows any directory to be chosen.</string>
   <string name="help">Help</string>
   <string name="help_summary">Information</string>
   <string name="transition_pref">Transition</string>
@@ -22,38 +20,23 @@
     <item>1</item>
     <item>0</item>
   </string-array>
-  <string name="rotate_pref">Rotation</string>
-  <string name="rotate_pref_on">Images will be automatically rotated if needed.
-  </string>
-  <string name="rotate_pref_off">Images will not be rotated.</string>
-  <string name="stretching_pref">Scaling</string>
-  <string name="stretching_pref_on">Images will be scaled to fit the screen.</string>
-  <string name="stretching_pref_off">Images will not be scaled to fit the screen.
-  </string>
-
-  <string name="trim_pref">Lossless trimming</string>
-  <string name="trim_pref_on">Images will be trimmed to fit the screen.</string>
-  <string name="trim_pref_off">Images will not be trimmed to fit the screen.
-  </string>
-
+  <string name="stretching_pref">Stretching</string>
+  <string name="stretching_pref_on">Images will be stretched to fill the screen if they are too small.</string>
+  <string name="stretching_pref_off">Images will not be stretched to fill the screen if they are too small.</string>
   <string name="scrolling_pref">Scrolling</string>
   <string name="scrolling_pref_on">Scrolling is currently enabled</string>
   <string name="scrolling_pref_off">Scrolling is currently disabled</string>
   <string name="external_storage_folder">Directory Chooser</string>
-  <string name="external_storage_folder_summary">Top-level SD card folder containing pictures
-  </string>
+  <string name="external_storage_folder_summary">Top-level SD card folder containing pictures</string>
   <string name="time_between_pictures">Time between pictures</string>
-  <string name="time_between_pictures_summary">How long before changing to the next picture
-  </string>
+  <string name="time_between_pictures_summary">How long before changing to the next picture</string>
   <string name="click_to_change_pref">Enable double-tap</string>
-  <string name="click_to_change_pref_on">Currently will switch pictures when double tapping
-    on the background.</string>
+  <string name="click_to_change_pref_on">Currently will switch pictures when double tapping on the background.</string>
   <string name="click_to_change_pref_off">Enable to switch pictures with double tap.</string>
   <string name="no_images_found">Choose a folder with images!</string>
   <string name="file_size_too_big">File is too big!</string>
   <string name="sd_card_not_available">SD Card is not available!</string>
-  <string name="wallpaper_desc">Randomly switches between photos in a SD card
-    folder.</string>
+  <string name="wallpaper_desc">Randomly switches between photos in a SD card folder.</string>
   <string name="author">mikeyin</string>
   <string-array name="time_choices_human_readable">
     <item>1s</item>

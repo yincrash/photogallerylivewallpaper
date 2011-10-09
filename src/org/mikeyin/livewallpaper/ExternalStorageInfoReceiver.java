@@ -21,7 +21,7 @@ public class ExternalStorageInfoReceiver extends BroadcastReceiver
   @Override
   public void onReceive(Context context, Intent intent)
   {
-    SharedPreferences prefs = context.getSharedPreferences(GalleryWallpaper.GalleryEngine.SHARED_PREFS_NAME, 0);
+    SharedPreferences prefs = context.getSharedPreferences(GalleryWallpaper.SHARED_PREFS_NAME, 0);
     SharedPreferences.Editor editor = prefs.edit();
     String action = intent.getAction();
     if (Intent.ACTION_MEDIA_UNMOUNTED.equals(action) ||
