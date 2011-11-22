@@ -3,7 +3,6 @@
  */
 package org.mikeyin.livewallpaper;
 
-import org.mikeyin.livewallpaper.GalleryWallpaper.GalleryEngine;
 
 import android.view.MotionEvent;
 import android.view.GestureDetector.SimpleOnGestureListener;
